@@ -1,4 +1,4 @@
-// xicos49916@jarilusua.com     Audios on mail 
+ 
 
 //Accessing the elements 
 const secHand = document.querySelector('.seconds');
@@ -22,10 +22,6 @@ function setDate(){
     console.log(hour);
     const hourDegree = ( ( (hour) / 12) * 360 ) + 90;
     hourHand.style.transform = `rotate(${hourDegree}deg)`;
-
-    if(secDegree == 0 ){
-        secHand.style.transform = 'none';
-    }
-    
+   
 }
 setInterval(setDate,1000);
